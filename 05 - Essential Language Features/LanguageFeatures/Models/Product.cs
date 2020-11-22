@@ -1,7 +1,10 @@
-namespace LanguageFeatures.Models {
-    public class Product {
+namespace LanguageFeatures.Models
+{
+    public class Product
+    {
 
-        public Product(bool stock = true) {
+        public Product(bool stock = true)
+        {
             InStock = stock;
         }
 
@@ -12,15 +15,18 @@ namespace LanguageFeatures.Models {
         public bool InStock { get; }
         public bool NameBeginsWithS => Name?[0] == 'S';
 
-        public static Product[] GetProducts() {
+        public static Product[] GetProducts()
+        {
 
-            Product kayak = new Product {
+            Product kayak = new Product
+            {
                 Name = "Kayak",
                 Category = "Water Craft",
                 Price = 275M
             };
 
-            Product lifejacket = new Product(false) {
+            Product lifejacket = new Product(false)
+            {
                 Name = "Lifejacket",
                 Price = 48.95M
             };
