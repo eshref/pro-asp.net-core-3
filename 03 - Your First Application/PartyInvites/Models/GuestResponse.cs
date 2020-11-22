@@ -1,8 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace PartyInvites.Models {
+namespace PartyInvites.Models
+{
 
-    public class GuestResponse {
+    public class GuestResponse
+    {
 
         [Required(ErrorMessage = "Please enter your name")]
         public string Name { get; set; }
